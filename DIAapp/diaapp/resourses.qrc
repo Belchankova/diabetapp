@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>resourses/fonts/Roboto-Medium.ttf</file>
+        <file>resourses/fonts/Roboto-MediumItalic.ttf</file>
+        <file>resourses/images/free-icon-diabetes-7350822.png</file>
+    </qresource>
+</RCC>
