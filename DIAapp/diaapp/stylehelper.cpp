@@ -1,7 +1,6 @@
 #include "stylehelper.h"
 
 
-
 QString stylehelper::getMainWindowStyle()
 {
     return "QWidget#MainWindow{"
@@ -11,6 +10,6 @@ QString stylehelper::getMainWindowStyle()
 
 QString stylehelper::getStartTabWidgetStyle()
 {
-
+    return "";
 }
 //

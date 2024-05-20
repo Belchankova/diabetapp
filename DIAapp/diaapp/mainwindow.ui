@@ -42,128 +42,123 @@
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
-   <widget class="QTabWidget" name="tabWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1161</width>
-      <height>681</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(43, 49, 75);</string>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab_6">
-     <attribute name="title">
-      <string>Дневник</string>
-     </attribute>
-     <widget class="QTabWidget" name="tabWidget">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>30</y>
-        <width>815</width>
-        <height>440</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Verdana</family>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="sectionsTabWidget">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(217, 210, 255);
-border-radius: 5px
-</string>
+       <string notr="true">background:none;
+background-color: rgb(43, 49, 75);
+border-top-color: rgb(43, 49, 75);
+border-right-color: rgb(43, 49, 75);
+border-color: rgb(43, 49, 75);</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="tab">
-       <property name="contextMenuPolicy">
-        <enum>Qt::NoContextMenu</enum>
+      <widget class="QWidget" name="diaryTab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 49, 75);</string>
        </property>
        <attribute name="title">
-        <string>Сахар</string>
+        <string>Дневник</string>
        </attribute>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_16">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_29">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QTabWidget" name="diaryTabWidget">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Verdana</family>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(217, 210, 255);
+border-radius: 5px
+</string>
+          </property>
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <property name="contextMenuPolicy">
+            <enum>Qt::NoContextMenu</enum>
+           </property>
+           <attribute name="title">
+            <string>Сахар</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QPushButton" name="pushButton_67">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{
+               <layout class="QVBoxLayout" name="verticalLayout_29">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_17">
+                  <item>
+                   <widget class="QPushButton" name="ButtonSugar_Sugar">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
 font-family: 'Roboto medium';
 font-size: 16px; 	
 color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
+background-color: rgb(160, 168, 221);
 	border-color: rgb(160, 168, 221);
 border: 2px solid rgb(160, 168, 221) ;
 border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Сахар</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_68">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Сахар</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonHE_Sugar">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -173,28 +168,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>ХЕ</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_69">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>ХЕ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBolus_Sugar">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -204,28 +199,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Болюсный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_70">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Болюсный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBazal_Sugar">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -235,28 +230,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Базальный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_71">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Базальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonNotes_Sugar">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -266,237 +261,533 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Примечания</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_30">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>60</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_30">
-              <property name="spacing">
-               <number>7</number>
-              </property>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    </property>
+                    <property name="text">
+                     <string>Примечания</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
                 <item>
-                 <spacer name="horizontalSpacer">
+                 <spacer name="verticalSpacer_30">
                   <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
+                   <enum>Qt::Vertical</enum>
                   </property>
                   <property name="sizeType">
                    <enum>QSizePolicy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
-                    <width>270</width>
-                    <height>10</height>
+                    <width>20</width>
+                    <height>60</height>
                    </size>
                   </property>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_15">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                 <layout class="QVBoxLayout" name="verticalLayout_30">
+                  <property name="spacing">
+                   <number>7</number>
                   </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>100</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(217, 210, 255);
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <spacer name="horizontalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>270</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_15">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>100</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(217, 210, 255);
 border-color: rgb(217, 210, 255);
 font: 9pt &quot;Verdana&quot;;</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Roboto medium</family>
-                    <pointsize>-1</pointsize>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">font-family: 'Roboto medium';
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Roboto medium</family>
+                        <pointsize>-1</pointsize>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font-family: 'Roboto medium';
 font-size: 16px;</string>
-                  </property>
-                  <property name="text">
-                   <string>ммоль/л</string>
-                  </property>
-                  <property name="textFormat">
-                   <enum>Qt::AutoText</enum>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_2">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>270</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
+                      </property>
+                      <property name="text">
+                       <string>ммоль/л</string>
+                      </property>
+                      <property name="textFormat">
+                       <enum>Qt::AutoText</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>270</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_31">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_29">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_32">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_30">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QDateTimeEdit" name="dateTimeEdit_15">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>140</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>false</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
                 </item>
                </layout>
               </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>ХЕ</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
-               <spacer name="verticalSpacer_31">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>60</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_29">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_32">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>30</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_30">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-               <widget class="QDateTimeEdit" name="dateTimeEdit_15">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>140</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="calendarPopup">
-                 <bool>false</bool>
-                </property>
-                <property name="timeSpec">
-                 <enum>Qt::LocalTime</enum>
-                </property>
-               </widget>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QPushButton" name="ButtonSugar_HE">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(185, 194, 255);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Сахар</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonHE_HE">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(160, 168, 221);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>ХЕ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBolus_HE">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(185, 194, 255);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Болюсный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBazal_HE_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(185, 194, 255);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Базальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonNotes_HE">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(185, 194, 255);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Примечания</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_16">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLineEdit" name="lineEdit_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_10">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_15">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_11">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_16">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QDateTimeEdit" name="dateTimeEdit_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>140</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>false</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
            </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_4">
-       <attribute name="title">
-        <string>ХЕ</string>
-       </attribute>
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_15">
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Болюсный</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
               <item>
-               <widget class="QPushButton" name="pushButton_32">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <widget class="QPushButton" name="ButtonSugar_Bolus">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -506,28 +797,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Сахар</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_33">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Сахар</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonHE_Bolus">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -537,28 +828,59 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>ХЕ</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_34">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>ХЕ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBolus_Bolus">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(160, 168, 221);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Болюсный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBazal_Bolus">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -568,28 +890,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Болюсный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_35">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Базальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonNotes_Bolus">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -599,496 +921,169 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Базальный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_36">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Примечания</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_9">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>60</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_16">
-              <property name="spacing">
-               <number>7</number>
-              </property>
-              <item alignment="Qt::AlignHCenter">
-               <widget class="QLineEdit" name="lineEdit_8">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>100</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_10">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>60</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_15">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_11">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>30</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_16">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-               <widget class="QDateTimeEdit" name="dateTimeEdit_8">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>140</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="calendarPopup">
-                 <bool>false</bool>
-                </property>
-                <property name="timeSpec">
-                 <enum>Qt::LocalTime</enum>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_2">
-       <attribute name="title">
-        <string>Болюсный</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_17">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_14">
-              <item>
-               <widget class="QPushButton" name="pushButton_62">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Сахар</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_63">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>ХЕ</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_64">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Болюсный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_65">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Базальный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_66">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Примечания</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_27">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>60</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_28">
-              <property name="spacing">
-               <number>7</number>
-              </property>
-              <item alignment="Qt::AlignHCenter">
-               <widget class="QLineEdit" name="lineEdit_14">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>100</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_28">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>60</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_27">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_29">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>30</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_28">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-               <widget class="QDateTimeEdit" name="dateTimeEdit_14">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>140</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="calendarPopup">
-                 <bool>false</bool>
-                </property>
-                <property name="timeSpec">
-                 <enum>Qt::LocalTime</enum>
-                </property>
-               </widget>
+                    </property>
+                    <property name="text">
+                     <string>Примечания</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_27">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_28">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLineEdit" name="lineEdit_14">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_28">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_27">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_29">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_28">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QDateTimeEdit" name="dateTimeEdit_14">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>140</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>false</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
            </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_3">
-       <attribute name="title">
-        <string>Базальный</string>
-       </attribute>
-       <layout class="QHBoxLayout" name="horizontalLayout_19">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_20">
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Базальный</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
               <item>
-               <widget class="QPushButton" name="pushButton_42">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QPushButton" name="ButtonSugar_Bazal">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1098,28 +1093,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Сахар</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_43">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Сахар</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonHE_Bazal">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1129,28 +1124,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>ХЕ</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_44">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>ХЕ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBolus_Bazal">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1160,28 +1155,59 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Болюсный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_45">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Болюсный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBazal_Bazal">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
+font-size: 16px;
+color: rgb(0, 39, 57);
+background-color: rgb(160, 168, 221);
+	border-color: rgb(160, 168, 221);
+border: 2px solid rgb(160, 168, 221) ;
+border-radius: 20px;}
+QPushButton:pressed {
+	background-color: rgb(160, 168, 221);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Базальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonNotes_Bazal">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1191,200 +1217,169 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Базальный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_46">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
-font-size: 16px;
-color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
-	border-color: rgb(160, 168, 221);
-border: 2px solid rgb(160, 168, 221) ;
-border-radius: 20px;}
-QPushButton:pressed {
-	background-color: rgb(160, 168, 221);
-}</string>
-                </property>
-                <property name="text">
-                 <string>Примечания</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_15">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>60</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_21">
-              <property name="spacing">
-               <number>7</number>
-              </property>
-              <item alignment="Qt::AlignHCenter">
-               <widget class="QLineEdit" name="lineEdit_10">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>100</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_16">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>60</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_19">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_17">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>30</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_20">
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-               <widget class="QDateTimeEdit" name="dateTimeEdit_10">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>140</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="calendarPopup">
-                 <bool>false</bool>
-                </property>
-                <property name="timeSpec">
-                 <enum>Qt::LocalTime</enum>
-                </property>
-               </widget>
+                    </property>
+                    <property name="text">
+                     <string>Примечания</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLineEdit" name="lineEdit_10">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_16">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_19">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_17">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_20">
+                    <property name="styleSheet">
+                     <string notr="true">image: url(:/new/prefix1/resourses/2.png);</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QDateTimeEdit" name="dateTimeEdit_10">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>140</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>false</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
            </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_5">
-       <attribute name="title">
-        <string>Примечания</string>
-       </attribute>
-       <layout class="QHBoxLayout" name="horizontalLayout_20">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_12">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_24">
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>Примечания</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_20">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
               <item>
-               <widget class="QPushButton" name="pushButton_52">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+               <layout class="QVBoxLayout" name="verticalLayout_24">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QPushButton" name="ButtonSugar_Notes">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1394,28 +1389,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Сахар</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_53">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Сахар</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonHE_Notes">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1425,28 +1420,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>ХЕ</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_54">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>ХЕ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBolus_Notes">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1456,28 +1451,28 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Болюсный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_55">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Болюсный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonBazal_Notes">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
 background-color: rgb(185, 194, 255);
@@ -1487,132 +1482,126 @@ border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Базальный</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_56">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>93</width>
-                  <height>50</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font-family: 'Roboto medium';
+                    </property>
+                    <property name="text">
+                     <string>Базальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ButtonNotes_Notes">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>93</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 color: rgb(0, 39, 57);
-background-color: rgb(185, 194, 255);
+background-color: rgb(160, 168, 221);
 	border-color: rgb(160, 168, 221);
 border: 2px solid rgb(160, 168, 221) ;
 border-radius: 20px;}
 QPushButton:pressed {
 	background-color: rgb(160, 168, 221);
 }</string>
-                </property>
-                <property name="text">
-                 <string>Примечания</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_25">
-              <property name="spacing">
-               <number>7</number>
-              </property>
-              <item>
-               <widget class="QTextEdit" name="textEdit">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 9pt &quot;Verdana&quot;;
+                    </property>
+                    <property name="text">
+                     <string>Примечания</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <item>
+                   <widget class="QTextEdit" name="textEdit">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 9pt &quot;Verdana&quot;;
 background-color: rgb(255, 255, 255);</string>
-                </property>
-               </widget>
-              </item>
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-               <widget class="QDateTimeEdit" name="dateTimeEdit_12">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>140</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="calendarPopup">
-                 <bool>false</bool>
-                </property>
-                <property name="timeSpec">
-                 <enum>Qt::LocalTime</enum>
-                </property>
-               </widget>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QDateTimeEdit" name="dateTimeEdit_12">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>140</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>false</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
            </layout>
-          </item>
-         </layout>
+          </widget>
+         </widget>
         </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>480</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>20</width>
-        <height>20</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <family>Roboto medium</family>
-        <pointsize>-1</pointsize>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{font-family: 'Roboto medium';
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="pushButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto medium</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{font-family: 'Roboto medium';
 font-size: 16px;
 	color: rgb(0, 45, 66);
 	
@@ -1623,743 +1612,254 @@ QPushButton:pressed {
 	
 	background-color: rgb(50, 69, 81);
 }</string>
-      </property>
-      <property name="text">
-       <string>Готово</string>
-      </property>
+          </property>
+          <property name="text">
+           <string>Готово</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <zorder>pushButton</zorder>
+       <zorder>diaryTabWidget</zorder>
+      </widget>
+      <widget class="QWidget" name="historyTab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 49, 75);</string>
+       </property>
+       <attribute name="title">
+        <string>История</string>
+       </attribute>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>200</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>HISTORY</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="schoolTab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 49, 75);</string>
+       </property>
+       <attribute name="title">
+        <string>Школа диабета</string>
+       </attribute>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>200</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SCHOOL</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="xeTableTab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 49, 75);</string>
+       </property>
+       <attribute name="title">
+        <string>Таблица ХЕ</string>
+       </attribute>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>190</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>XE</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="profileTab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 49, 75);</string>
+       </property>
+       <attribute name="title">
+        <string>Профиль</string>
+       </attribute>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>190</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PROFILE</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>530</y>
-        <width>1030</width>
-        <height>102</height>
-       </rect>
+    </item>
+    <item>
+     <widget class="QFrame" name="tabButtonsFrame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="bottomMargin">
+          <number>0</number>
          </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
+         <item>
+          <widget class="QPushButton" name="diaryButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-family: 'Roboto medium';
 font-size: 20px;
 color: rgb(0, 0, 38);
 background-color: rgb(213, 205, 255);
 border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Дневник</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
+           </property>
+           <property name="text">
+            <string>Дневник</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="historyButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-family: 'Roboto medium';
 font-size: 20px;
 color: rgb(0, 0, 38);
 background-color: rgb(213, 205, 255);
 border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>История</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
+           </property>
+           <property name="text">
+            <string>История</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="schoolButton">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-family: 'Roboto medium';
 font-size: 20px;
 color: rgb(0, 0, 38);
 background-color: rgb(213, 205, 255);
 border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Школа диабета</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
+           </property>
+           <property name="text">
+            <string>Школа диабета</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="xeTableButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-family: 'Roboto medium';
 font-size: 20px;
 color: rgb(0, 0, 38);
 background-color: rgb(213, 205, 255);
 border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Таблица ХЕ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_6">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
+           </property>
+           <property name="text">
+            <string>Таблица ХЕ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="profileButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-family: 'Roboto medium';
 font-size: 20px;
 color: rgb(0, 0, 38);
 background-color: rgb(213, 205, 255);
 border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Профиль</string>
-         </property>
-        </widget>
+           </property>
+           <property name="text">
+            <string>Профиль</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_7">
-     <attribute name="title">
-      <string>История</string>
-     </attribute>
-     <widget class="QWidget" name="layoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>530</y>
-        <width>1030</width>
-        <height>102</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
-       <item>
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Дневник</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_8">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>История</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_9">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Школа диабета</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_10">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Таблица ХЕ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_11">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Профиль</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_15">
-     <attribute name="title">
-      <string>Школа диабета</string>
-     </attribute>
-     <widget class="QWidget" name="layoutWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>530</y>
-        <width>1030</width>
-        <height>102</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_35">
-       <item>
-        <widget class="QPushButton" name="pushButton_23">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Дневник</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_24">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>История</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_25">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Школа диабета</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_26">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Таблица ХЕ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_27">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Профиль</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_16">
-     <attribute name="title">
-      <string>Таблица ХЕ</string>
-     </attribute>
-     <widget class="QWidget" name="layoutWidget_7">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>530</y>
-        <width>1030</width>
-        <height>102</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_36">
-       <item>
-        <widget class="QPushButton" name="pushButton_28">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Дневник</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_29">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>История</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_30">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Школа диабета</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_31">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Таблица ХЕ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_82">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Профиль</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_17">
-     <attribute name="title">
-      <string>Профиль</string>
-     </attribute>
-     <widget class="QWidget" name="layoutWidget_8">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>530</y>
-        <width>1030</width>
-        <height>102</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_37">
-       <item>
-        <widget class="QPushButton" name="pushButton_83">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Дневник</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_84">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>История</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_85">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Школа диабета</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_86">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Таблица ХЕ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_87">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font-family: 'Roboto medium';
-font-size: 20px;
-color: rgb(0, 0, 38);
-background-color: rgb(213, 205, 255);
-border-color: rgb(185, 194, 255);</string>
-         </property>
-         <property name="text">
-          <string>Профиль</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
+   <zorder>tabButtonsFrame</zorder>
+   <zorder>sectionsTabWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

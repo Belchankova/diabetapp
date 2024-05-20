@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,6 +22,7 @@ FORMS += \
 
 TRANSLATIONS += \
     diaapp_ru_BY.ts
+
 CONFIG += lrelease
 CONFIG += embed_translations
 

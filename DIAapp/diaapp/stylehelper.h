@@ -1,6 +1,7 @@
-#ifndef STYLEHELPER_H
-#define STYLEHELPER_H
+#pragma once
+
 #include <QString>
+
 class stylehelper
 {
 public:
@@ -8,4 +9,4 @@ public:
     static QString getStartTabWidgetStyle();
 };
 
-#endif // STYLEHELPER_H
+
