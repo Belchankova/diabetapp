@@ -256,7 +256,7 @@ void MainWindow::on_ButtonBazal_Notes_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-   ui->aboutDiabet->setCurrentIndex(5);
+   ui->sectionsTabWidget->setCurrentIndex(5);
 }
 
 
