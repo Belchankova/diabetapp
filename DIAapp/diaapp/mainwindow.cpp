@@ -1,9 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "stylehelper.h"
+#include "appuser.h"
+
 #include <QTabBar>
 #include <QWidget>
-#include "stylehelper.h"
-#include<QFontDatabase>
+#include <QFontDatabase>
+#include <QCryptographicHash>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -42,6 +45,13 @@ void MainWindow::setConnections()
     connect(ui->xeTableButton, &QPushButton::clicked, this, &MainWindow::onXeTableButtonClicked);
     connect(ui->profileButton, &QPushButton::clicked, this, &MainWindow::onProfileButtonClicked);
 
+    // страница авторизации
+    connect(ui->signUpButton, &QPushButton::clicked, this, &MainWindow::onSignUpButtonClicked);
+    connect(ui->loginButtion, &QPushButton::clicked, this, &MainWindow::onLoginButtonClicked);
+
+    // страница создания пользователя
+    connect(ui->createUserButton, &QPushButton::clicked, this, &MainWindow::onCreateUserButtonClicked);
+    connect(ui->cancelCreateUserButton, &QPushButton::clicked, this, &MainWindow::onCancelCreateUserButtonClicked);
 }
 
 void MainWindow::onDiaryButtonsClicked()
@@ -69,6 +79,55 @@ void MainWindow::onProfileButtonClicked()
     ui->sectionsTabWidget->setCurrentIndex(4);
 }
 
+// страница авторизации
+void MainWindow::onSignUpButtonClicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+void MainWindow::onLoginButtonClicked()
+{
+    // проверка в БД
+    //ui->stackedWidget->setCurrentIndex(1);
+    auto login = ui->loginLineEdit->text();
+    auto password = ui->passwordLineEdit->text();
+    auto hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();
+
+    if (this->dbManager.signIn(login, hash))
+    {
+        ui->loginStatusLabel->setText("Успешный вход");
+        ui->stackedWidget->setCurrentIndex(2);
+    }
+    else
+    {
+        ui->loginStatusLabel->setText("Неправильный логин или пароль");
+    }
+
+    return;
+}
+
+// страница создания пользователя
+void MainWindow::onCreateUserButtonClicked()
+{
+    // считать данные из полей
+    auto firstName = ui->firstNameLineEdit->text();
+    auto lastName = ui->lastNameLlineEdit->text();
+    auto email = ui->emailLinedit->text();
+    auto birthdayDate = ui->birthdayDateEdit->text();
+    auto password = ui->userPasswordLineEdit->text();
+
+    AppUser newUser(firstName, lastName, email, birthdayDate, password);
+
+    this->dbManager.addNewUser(newUser);
+
+    ui->stackedWidget->setCurrentIndex(0);
+}
+void MainWindow::onCancelCreateUserButtonClicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+
 void MainWindow::on_ButtonSugar_Sugar_clicked()
 {
     ui->diaryTabWidget->setCurrentIndex(0);
@@ -95,13 +154,13 @@ void MainWindow::on_ButtonBazal_Sugar_clicked()
 
 void MainWindow::on_ButtonNotes_Sugar_clicked()
 {
-    ui->diaryTabWidget->setCurrentIndex(4);
+   ui->diaryTabWidget->setCurrentIndex(4);
 }
 
 
 void MainWindow::on_ButtonSugar_HE_clicked()
 {
-    ui->diaryTabWidget->setCurrentIndex(0);
+   ui->diaryTabWidget->setCurrentIndex(0);
 }
 
 
@@ -192,5 +251,29 @@ void MainWindow::on_ButtonBolus_Notes_clicked()
 void MainWindow::on_ButtonBazal_Notes_clicked()
 {
     ui->diaryTabWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+   ui->aboutDiabet->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    ui->sectionsTabWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+   ui->sectionsTabWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    ui->sectionsTabWidget->setCurrentIndex(8);
 }
 

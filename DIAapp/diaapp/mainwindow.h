@@ -2,6 +2,10 @@
 
 #include <QMainWindow>
 
+#include "dbmanager.h"
+
+#define defaultDbName "DB for app.db"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -12,6 +16,7 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
     Ui::MainWindow *ui;
+    DBManager dbManager{defaultDbName};
 
 public:
     MainWindow(QWidget *parent = nullptr);
@@ -28,8 +33,18 @@ private slots:
     void onSchoolButtonClicked();
     void onXeTableButtonClicked();
     void onProfileButtonClicked();
+
+    // страница авторизации
+    void onSignUpButtonClicked();
+    void onLoginButtonClicked();
+
+    // страница создания пользователя
+    void onCreateUserButtonClicked();
+    void onCancelCreateUserButtonClicked();
+
+
     void on_ButtonSugar_Sugar_clicked();
-    void on_ButtonHE_Sugar_clicked();
+   void on_ButtonHE_Sugar_clicked();
     void on_ButtonBolus_Sugar_clicked();
     void on_ButtonBazal_Sugar_clicked();
     void on_ButtonNotes_Sugar_clicked();
@@ -50,4 +65,8 @@ private slots:
     void on_ButtonHE_Notes_clicked();
     void on_ButtonBolus_Notes_clicked();
     void on_ButtonBazal_Notes_clicked();
+    void on_pushButton_2_clicked();
+    void on_pushButton_3_clicked();
+    void on_pushButton_4_clicked();
+    void on_pushButton_5_clicked();
 };

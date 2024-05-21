@@ -5,5 +5,13 @@
         <file>resourses/images/free-icon-diabetes-7350822.png</file>
         <file>resourses/images/0AB93DB0-B961-4EA3-9FDA-E0FB72846433-removebg-preview.png</file>
         <file>resourses/2.png</file>
+        <file>resourses/images/aboutdiabet.PNG</file>
+        <file>resourses/images/giperglikemia.PNG</file>
+        <file>resourses/images/gipoglikemia.PNG</file>
+        <file>resourses/images/insulin.PNG</file>
+        <file>resourses/images/DiabetText.PNG</file>
+        <file>resourses/images/InsulinText.PNG</file>
+        <file>resourses/images/GipoglikemiaText.PNG</file>
+        <file>resourses/images/GiperglikemiaText.PNG</file>
     </qresource>
 </RCC>
